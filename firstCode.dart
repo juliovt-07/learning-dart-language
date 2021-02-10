@@ -10,6 +10,9 @@ void main() {
 */
   var fullName = name + name_two;
   person(fullName, printFinish, yearsOld: 20, city: "Imperatriz - Ma");
+  person(fullName, () {
+    print("Função anônima executada!");
+  });
 }
 
 void printFinish() {
